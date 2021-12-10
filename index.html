@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://kit.fontawesome.com/e520920383.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <title>ArPlayer</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="player">   
+      
+      <video id="video" src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="500px" ></video>
+      
+      <div class="player-overlay">
+        <h2 class="player-title">Musica para programadores</h2>
+        <div class="player-action">
+          <button class="button" id="backward" aria-label="retroceder 10 segundos" title="Retroceder 10 segundos"><i class="fas fa-undo-alt"></i></button>
+          <button class="button" hidden id="pause" aria-label="pausar" title="Pausar"></i><i class="far fa-pause-circle"></i></button>
+          <button class="button" id="play" aria-label="reproducir" title="Reproducir"><i class="far fa-play-circle"></i></button>
+          <button class="button" id="forward" aria-label="adelantar 10 segundos" title="Adelantar 10 segundos"><i class="fas fa-redo-alt"></i></button>
+        </div>
+       
+       <div class="player-progress">
+         <input id="progress" type="range" min="0" value="0" step="1">
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javaScript/script.js"></script>
+
+</body>
+</html>
